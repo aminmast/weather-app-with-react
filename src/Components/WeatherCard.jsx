@@ -17,6 +17,8 @@ const WeatherCard = (props) => {
     return <img src={icon} alt={props.weatherResult.weather[0].description} />;
   };
 
+  document.title = "Weather : " + props.weatherResult.name;
+
   return (
     <div className="weather-card">
       <div className="part-1">
@@ -50,7 +52,7 @@ const WeatherCard = (props) => {
           <div className="min-temp">
             <FaTemperatureLow />
             <p>
-              mix-temp : {changeToCelsius(props.weatherResult.main.temp_min)}
+              min-temp : {changeToCelsius(props.weatherResult.main.temp_min)}
             </p>
           </div>
         </div>

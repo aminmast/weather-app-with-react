@@ -15,6 +15,7 @@ const App = () => {
     setWeatherResult(response.data);
   };
 
+
   return (
     <div className="body">
       <h1 className="title">WEATHER</h1>
